@@ -20,58 +20,52 @@
 <main class="container my-5">
     <h1 class="text-center mb-4">Carrito de Compras</h1>
 
-    <div class="table-responsive">
-        <table class="table table-bordered table-striped align-middle">
-            <thead class="table-success">
-            <tr>
-                <th>Producto</th>
-                <th>Cantidad</th>
-                <th>Precio</th>
-                <th>Subtotal</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Alimento Premium Perro</td>
-                <td>1</td>
-                <td>$24.990</td>
-                <td>$24.990</td>
-            </tr>
-            <tr>
-                <td>Juguete Mordedor</td>
-                <td>1</td>
-                <td>$5.990</td>
-                <td>$5.990</td>
-            </tr>
-            </tbody>
-        </table>
+    <div id="carritoVacio" class="alert alert-warning text-center d-none">
+        El carrito está vacío.
     </div>
 
-    <div class="card shadow mt-4">
-        <div class="card-body">
-            <h4>Total: $30.980</h4>
-            <p class="text-muted">
-                El pago será simulado, según lo solicitado por la actividad.
-            </p>
+    <div id="carritoContenido" class="d-none">
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped align-middle">
+                <thead class="table-success">
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th>Subtotal</th>
+                    <th>Acción</th>
+                </tr>
+                </thead>
+                <tbody id="tablaCarrito"></tbody>
+            </table>
+        </div>
 
-            <form id="pagoForm">
-                <div class="mb-3">
-                    <label class="form-label">Nombre del titular</label>
-                    <input type="text" id="titularPago" class="form-control" required>
-                </div>
+        <div class="card shadow mt-4">
+            <div class="card-body">
+                <h4 id="totalCarrito">Total: $0</h4>
+                <p class="text-muted">
+                    El pago será simulado, según lo solicitado por la actividad.
+                </p>
 
-                <div class="mb-3">
-                    <label class="form-label">Método de pago</label>
-                    <select id="metodoPago" class="form-select" required>
-                        <option value="">Seleccione...</option>
-                        <option value="debito">Débito</option>
-                        <option value="credito">Crédito</option>
-                        <option value="transferencia">Transferencia</option>
-                    </select>
-                </div>
+                <form id="pagoForm">
+                    <div class="mb-3">
+                        <label class="form-label">Nombre del titular</label>
+                        <input type="text" id="titularPago" class="form-control" required>
+                    </div>
 
-                <button type="submit" class="btn btn-success">Simular pago</button>
-            </form>
+                    <div class="mb-3">
+                        <label class="form-label">Método de pago</label>
+                        <select id="metodoPago" class="form-select" required>
+                            <option value="">Seleccione...</option>
+                            <option value="debito">Débito</option>
+                            <option value="credito">Crédito</option>
+                            <option value="transferencia">Transferencia</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-success">Simular pago</button>
+                </form>
+            </div>
         </div>
     </div>
 </main>

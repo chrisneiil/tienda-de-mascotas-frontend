@@ -18,6 +18,8 @@
             <a class="btn btn-light btn-sm" href="perfil.html">Mi perfil</a>
             <a class="btn btn-warning btn-sm" href="carrito.html">Carrito</a>
             <a class="btn btn-outline-light btn-sm" href="admin-productos.html">Admin</a>
+            <button class="btn btn-danger btn-sm" onclick="cerrarSesion()">Salir</button>
+
         </div>
     </div>
 </nav>
@@ -34,7 +36,9 @@
                     <h5 class="card-title">Alimento Premium Perro</h5>
                     <p class="card-text">Saco de alimento premium para perros adultos.</p>
                     <p class="fw-bold">$24.990</p>
-                    <button class="btn btn-success w-100" onclick="agregarCarrito('Alimento Premium Perro')">Agregar al carrito</button>
+                    <button class="btn btn-success w-100" onclick="agregarCarrito('Alimento Premium Perro', 24990)">
+                        Agregar al carrito
+                    </button>
                 </div>
             </div>
         </div>
@@ -46,7 +50,9 @@
                     <h5 class="card-title">Juguete Mordedor</h5>
                     <p class="card-text">Juguete resistente para perros pequeños y medianos.</p>
                     <p class="fw-bold">$5.990</p>
-                    <button class="btn btn-success w-100" onclick="agregarCarrito('Juguete Mordedor')">Agregar al carrito</button>
+                    <button class="btn btn-success w-100" onclick="agregarCarrito('Juguete Mordedor', 5990)">
+                        Agregar al carrito
+                    </button>
                 </div>
             </div>
         </div>
@@ -58,7 +64,9 @@
                     <h5 class="card-title">Cama para Gato</h5>
                     <p class="card-text">Cama suave y cómoda para gatos de interior.</p>
                     <p class="fw-bold">$18.990</p>
-                    <button class="btn btn-success w-100" onclick="agregarCarrito('Cama para Gato')">Agregar al carrito</button>
+                    <button class="btn btn-success w-100" onclick="agregarCarrito('Cama para Gato', 18990)">
+                        Agregar al carrito
+                    </button>
                 </div>
             </div>
         </div>
