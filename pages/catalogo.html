@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container">
+        <a class="navbar-brand" href="../index.html">Tienda de Mascotas</a>
+
+        <div>
+            <a class="btn btn-light btn-sm" href="perfil.html">Mi perfil</a>
+            <a class="btn btn-warning btn-sm" href="carrito.html">Carrito</a>
+            <a class="btn btn-outline-light btn-sm" href="admin-productos.html">Admin</a>
+        </div>
+    </div>
+</nav>
+
+<main class="container my-5">
+    <h1 class="text-center mb-4">Catálogo de Productos</h1>
+
+    <div class="row g-4">
+
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow">
+                <img src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?w=600" class="card-img-top" alt="Alimento para perro">
+                <div class="card-body">
+                    <h5 class="card-title">Alimento Premium Perro</h5>
+                    <p class="card-text">Saco de alimento premium para perros adultos.</p>
+                    <p class="fw-bold">$24.990</p>
+                    <button class="btn btn-success w-100" onclick="agregarCarrito('Alimento Premium Perro')">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow">
+                <img src="https://images.unsplash.com/photo-1601758124510-52d02ddb7cbd?w=600" class="card-img-top" alt="Juguete para mascota">
+                <div class="card-body">
+                    <h5 class="card-title">Juguete Mordedor</h5>
+                    <p class="card-text">Juguete resistente para perros pequeños y medianos.</p>
+                    <p class="fw-bold">$5.990</p>
+                    <button class="btn btn-success w-100" onclick="agregarCarrito('Juguete Mordedor')">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow">
+                <img src="https://images.unsplash.com/photo-1545249390-6bdfa286032f?w=600" class="card-img-top" alt="Cama para gato">
+                <div class="card-body">
+                    <h5 class="card-title">Cama para Gato</h5>
+                    <p class="card-text">Cama suave y cómoda para gatos de interior.</p>
+                    <p class="fw-bold">$18.990</p>
+                    <button class="btn btn-success w-100" onclick="agregarCarrito('Cama para Gato')">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
